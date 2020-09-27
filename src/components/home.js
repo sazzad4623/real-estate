@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Contact from "./contact";
+import About from "./about";
 
-export default function home() {
+export default function Home() {
   return (
     <div>
       <div className="site-loader" />
@@ -111,7 +114,7 @@ export default function home() {
                       <a href="about.html">About</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <Link to="/contact">Contact</Link>
                     </li>
                   </ul>
                 </nav>
@@ -1078,6 +1081,10 @@ export default function home() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <About />
+        <Contact />
       </div>
       <footer className="site-footer">
         <div className="container">
